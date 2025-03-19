@@ -17,33 +17,86 @@ body{
 }
 
 .vs{
+    position: relative;
     border: 1px solid orange;
     color: orange;
     text-align: center;
-    font-size: 20px;
+    font-size: 100px;
 }
 
-.match{
-    border: 1px solid rgb(251, 255, 44);
-    color: rgb(255, 235, 53);
-    text-align: center;
-    font-size: 20px;
+.space_1{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background-color: orange;
+    left: 200px;
+    top: 75px;
 }
 
-.box_1{
-    height: 50px;
-    width: 50px;
-    border: solid grey;
-    text-align: center;
-    color: grey;
-    right
+.space_2{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background-color: orange;
+    left: 1450px;
+    top: -80px;
 }
 
 .buttons{
     border: 1px solid green;
     color: green;
     text-align: center;
-    font-size: 20px;
+    font-size: 200px;
+}
+
+#rock{
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 5px 0px grey;
+    top: -50px;
+}
+
+#paper{
+    position: relative;
+    background-color: orange;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 5px 0px grey;
+    top: -50px;
+}
+
+#scissors{
+    position: relative;
+    background-color: green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 5px 0px grey;
+    top: -50px;
+}
+
+#stapler{
+    position: relative;
+    background-color: blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 5px 0px grey;
+    top: -50px;
+}
+
+#tape{
+    position: relative;
+    background-color: violet;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 5px 0px grey;
+    top: -50px;
 }
 
 .clear{
@@ -53,7 +106,18 @@ body{
     font-size: 20px;
 }
 
-.history{
+#box_clr{
+    position: relative;
+    background-color: blue;
+    width: 500px;
+    height: 80px;
+    right: -700px;
+    color: black;
+    font-size: 20px;
+    line-height: 85px;
+}
+
+.score{
     border: 1px solid violet;
     color: violet;
     text-align: center;
