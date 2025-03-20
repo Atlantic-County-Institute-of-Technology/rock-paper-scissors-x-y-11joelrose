@@ -1,6 +1,7 @@
 body{
     font-family: "Sixtyfour", sans-serif;
     background-color: black;
+
 }
 .container{
     display: flex;
@@ -13,7 +14,7 @@ body{
     color: red;
     font-size: 50px;
     text-align: center;
-    
+    border-bottom: black;
 }
 
 .vs{
@@ -22,6 +23,8 @@ body{
     color: orange;
     text-align: center;
     font-size: 100px;
+    border-top: black;
+    border-bottom: black;
 }
 
 .space_1{
@@ -47,6 +50,8 @@ body{
     color: green;
     text-align: center;
     font-size: 200px;
+    border-bottom: black;
+    border-top: black;
 }
 
 #rock{
@@ -57,6 +62,7 @@ body{
     height: 100px;
     box-shadow: 0px 5px 0px grey;
     top: -50px;
+    color: white;
 }
 
 #paper{
@@ -67,6 +73,7 @@ body{
     height: 100px;
     box-shadow: 0px 5px 0px grey;
     top: -50px;
+    color: white;
 }
 
 #scissors{
@@ -77,6 +84,7 @@ body{
     height: 100px;
     box-shadow: 0px 5px 0px grey;
     top: -50px;
+    color: white;
 }
 
 #stapler{
@@ -87,6 +95,7 @@ body{
     height: 100px;
     box-shadow: 0px 5px 0px grey;
     top: -50px;
+    color: white;
 }
 
 #tape{
@@ -97,29 +106,71 @@ body{
     height: 100px;
     box-shadow: 0px 5px 0px grey;
     top: -50px;
+    color: white;
 }
 
-.clear{
+.clearx{
     border: 1px solid blue;
     color: blue;
     text-align: center;
     font-size: 20px;
+    border-top: black;
+    border-bottom: black;
 }
 
-#box_clr{
-    position: relative;
-    background-color: blue;
-    width: 500px;
-    height: 80px;
-    right: -700px;
-    color: black;
-    font-size: 20px;
-    line-height: 85px;
+#clear{
+    border-radius: 50%;
+    height: 100px;
+    width: 800px;
+    box-shadow: 0px 4px 0px gray;
+    background: linear-gradient(45deg, red, red, orange, yellow, green, blue, indigo, violet, red, red);
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Sixtyfour", sans-serif;
+}
+
+.scorex{
+    border: 1px solid violet;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    border-top: black;
 }
 
 .score{
-    border: 1px solid violet;
-    color: violet;
+    position: relative;
+    background: linear-gradient(45deg, red, red, orange, yellow, green, blue, indigo, violet, pink, red, red);
+    height: 90px;
+    width: 500px;
+    left: 700px;
+    border-radius: 60%;
+}
+.game{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    color: black;
+    background-color: white;
+    bottom: 80px;
     text-align: center;
-    font-size: 20px;
+    left: 200px;
+    font-size: 30px;
+}
+
+.winner{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    color: black;
+    background-color: white;
+    bottom: 230px;
+    text-align: center;
+    left: 800px;
+    font-size: 30px;
+
+}
+
+.selectors{
+    height: 60px;
 }
