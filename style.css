@@ -1,7 +1,6 @@
 body{
     font-family: "Sixtyfour", sans-serif;
     background-color: black;
-
 }
 .container{
     display: flex;
@@ -166,9 +165,8 @@ body{
     background-color: white;
     bottom: 230px;
     text-align: center;
-    left: 800px;
-    font-size: 30px;
-
+    left: 1550px;
+    font-size: 20px;
 }
 
 .selectors{
