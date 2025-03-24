@@ -4,16 +4,22 @@ const scissors = document.getElementById('3')
 const stapler = document.getElementById('4')
 const tape = document.getElementById('5')
 
-const button = document.querySelector('button');
-button.addEventListener('click', myFunction);
+const button = document.getElementById('myButton');
 
-if (player chose 1)
+
+    if (randomNumber > 0.5) {
+        console.log('The random number is greater than 0.5');
+    } else {
+        console.log('The random number is greater than 0.5')
+    }
+
+if (player chose 1){
     if (cpu chose 3 or cpu chose 4)
         "Player Wins!"
-    else if (cpu chose 1)
+    } else { if (cpu chose 1)
         "Tie!"
-    else
-        "player Loses!"
+    } else {
+        "player Loses!" }
 
 if (player chose 2)
     if (cpu chose 1 or cpu chose 5)
