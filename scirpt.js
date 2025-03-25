@@ -4,51 +4,110 @@ const scissors = document.getElementById('3')
 const stapler = document.getElementById('4')
 const tape = document.getElementById('5')
 
-const button = document.getElementById('myButton');
+const btn_list = document.querySelectorAll ("button");
+console.log(btn_list);
 
+function winner(you, cpu) {
 
-    if (randomNumber > 0.5) {
-        console.log('The random number is greater than 0.5');
-    } else {
-        console.log('The random number is greater than 0.5')
+    you = you.toLowerCase();
+    cpu = cpu.toLowerCase();
+    if (you === cpu) {
+        result.textContent = 'Tie'
     }
+    else if (you.localCompare('1')) {
+        if (cpu == '3' || cpu == '4'){
+            result.textContent = 'Cpu won!';
+            cpuScore++;
+            cpuScoreBoard.textContent = cpuScore;
 
-if (player chose 1){
-    if (cpu chose 3 or cpu chose 4)
-        "Player Wins!"
-    } else { if (cpu chose 1)
-        "Tie!"
-    } else {
-        "player Loses!" }
+        } else {
+            result.textContent = 'You win!'
+            youScore++;
+            youScoreBoard.textContent = youScore;
+        }
+    }
+}
 
-if (player chose 2)
-    if (cpu chose 1 or cpu chose 5)
-        "Player Wins!"
-    else if (cpu chose 2)
-        "Tie!"
-    else
-        "Player Loses!"
+function winner(you, cpu) {
 
-if (player chose 3)
-    if (cpu chose 2 or cpu chose 4)
-        "Player Wins!"
-    else if (cpu chose 3)
-        "Tie!"
-    else
-        "Player Loses!"
+    you = you.toLowerCase();
+    cpu = cpu.toLowerCase();
+    if (you === cpu) {
+        result.textContent = 'Tie'
+    }
+    else if (you.localCompare('2')) {
+        if (cpu == '1' || cpu == '5'){
+            result.textContent = 'Cpu won!';
+            cpuScore++;
+            cpuScoreBoard.textContent = cpuScore;
 
-if (player chose 4) 
-    if (cpu chose 2 or cpu chose 5)
-        "Player Wins!"
-    else if (cpu chose 4)
-        "Tie!"
-    else
-        "Player Loses!"
+        } else {
+            result.textContent = 'You win!'
+            youScore++;
+            youScoreBoard.textContent = youScore;
+        }
+    }
+}
 
-if (player chose 5)
-    if (cpu chose 3 or cpu chose 1)
-        "Player Wins!"
-    else if (cpu chose 5)
-        "Tie!"
-    else
-        "Player Loses!"
+function winner(you, cpu) {
+
+    you = you.toLowerCase();
+    cpu = cpu.toLowerCase();
+    if (you === cpu) {
+        result.textContent = 'Tie'
+    }
+    else if (you.localCompare('3')) {
+        if (cpu == '2' || cpu == '4'){
+            result.textContent = 'Cpu won!';
+            cpuScore++;
+            cpuScoreBoard.textContent = cpuScore;
+
+        } else {
+            result.textContent = 'You win!'
+            youScore++;
+            youScoreBoard.textContent = youScore;
+        }
+    }
+}
+
+function winner(you, cpu) {
+
+    you = you.toLowerCase();
+    cpu = cpu.toLowerCase();
+    if (you === cpu) {
+        result.textContent = 'Tie'
+    }
+    else if (you.localCompare('4')) {
+        if (cpu == '2' || cpu == '5'){
+            result.textContent = 'Cpu won!';
+            cpuScore++;
+            cpuScoreBoard.textContent = cpuScore;
+
+        } else {
+            result.textContent = 'You win!'
+            youScore++;
+            youScoreBoard.textContent = youScore;
+        }
+    }
+}
+
+function winner(you, cpu) {
+
+    you = you.toLowerCase();
+    cpu = cpu.toLowerCase();
+    if (you === cpu) {
+        result.textContent = 'Tie'
+    }
+    else if (you.localCompare('5')) {
+        if (cpu == '3' || cpu == '1'){
+            result.textContent = 'Cpu won!';
+            cpuScore++;
+            cpuScoreBoard.textContent = cpuScore;
+
+        } else {
+            result.textContent = 'You win!'
+            youScore++;
+            youScoreBoard.textContent = youScore;
+        }
+    }
+}
