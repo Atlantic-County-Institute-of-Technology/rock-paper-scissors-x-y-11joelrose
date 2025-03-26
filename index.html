@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROCK PAPER SCISSORS </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors 2!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="title">ROCK PAPER SCISSORS 2!</div>
-        <div class="vs">
-            <div class="space_1"></div>
-            <div class="space_2"></div>
-            |YOU| - VS - |CPU|
-        </div>
-        <div class="buttons">
-            <button class="rock" id="rock"><img src="assets/download-removebg-preview.png" class="selectors"></button>
-            <button class="paper" id="paper"><img src="assets/download-removebg-preview (1).png" class="selectors" alt=""></button>
-            <button class="scissors" id="scissors"><img src="assets/images-removebg-preview (1).png" class="selectors" alt=""></button>
-            <button class="stapler" id="stapler"><img src="assets/download-removebg-preview (2).png" class="selectors"></button>
-            <button class="tape" id="tape"><img src="assets/images-removebg-preview (2).png" class="selectors"></button>
-        </div>
-        <div class="clearx">
-            <button class="clear" id="clear">CLEAR</div>
-        <div class="scorex">score
-            <div class="score"></div>
-            <div class="game">game</div>
-            <div class="winner">winner</div>
-        </div>
+    
+    <h1>Rock - Paper - Scissors</h1>
+
+    <div class="choices">
+        <button onclick ="playGame(rock)">🤜</button>
+        <button onclick ="playGame(paper)">✋</button>
+        <button onclick ="playGame(scissors)">✌️</button>
+        <button onclick ="playGame(tape)">🖭</button>
+        <button onclick ="playGame(stapler)">🧷</button>
     </div>
 
+    <div id="playerDisplay">PLAYER:</div>
+    <div id="computerDisplay">COMPUTER:</div>
+    <div id="resultDisplay"></div>
 
+
+    <script src="script.js"></script>
 </body>
-<script src="scirpt.js"></script>
 </html>
