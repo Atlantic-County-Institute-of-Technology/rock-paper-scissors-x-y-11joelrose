@@ -6,8 +6,9 @@ const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+const Reset = document.getElementById("Reset")
 let playerScore = 0;
-let computerScore = 0;
+let computerScore = 0; 
 
 function playGame(playerChoice){
 
@@ -42,7 +43,29 @@ function playGame(playerChoice){
     computerDisplay.textContent = `computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
-    resultDisplay.classList.remove("greenText");
-
     
+
+    switch(result){
+        case "YOU WIN!":
+            resultDisplay.classList.add("greenText");
+            playerScore++;
+            playerScoreDisplay.textContent = playerScore;
+            resultDisplay.classList.add("greenText");
+            resultDisplay.classList.remove("redText");
+            break;
+        case "YOU LOSE!":
+            resultDisplay.classList.add("redText");
+            computerScore++;
+            computerScoreDisplay.textContent = computerScore;
+            resultDisplay.classList.add("redText");
+            resultDisplay.classList.remove("greenText");
+            break;
+    }
+    function Reset(){
+        playerScore = 0;
+        computerScore = 0;
+        playerScoreDisplay.textContent = 0;
+        computerScoreDisplay.textContent=0;
+    }
+    resetButton.addEventListener("click", Reset)
 }
