@@ -1,4 +1,4 @@
-// Rock paper scissors 
+// Rock paper scissors
 
 const choices = ["rock", "paper", "scissors", "tape", "stapler"];
 const playerDisplay = document.getElementById("playerDisplay");
@@ -6,7 +6,7 @@ const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
-const Reset = document.getElementById("Reset")
+const resetButton = document.getElementById("Reset")
 let playerScore = 0;
 let computerScore = 0; 
 
@@ -43,7 +43,7 @@ function playGame(playerChoice){
     computerDisplay.textContent = `computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
-    
+    resultDisplay.classList.remove("greenText", "redText")
 
     switch(result){
         case "YOU WIN!":
@@ -58,14 +58,16 @@ function playGame(playerChoice){
             computerScore++;
             computerScoreDisplay.textContent = computerScore;
             resultDisplay.classList.add("redText");
-            resultDisplay.classList.remove("greenText");
             break;
     }
     function Reset(){
         playerScore = 0;
         computerScore = 0;
-        playerScoreDisplay.textContent = 0;
-        computerScoreDisplay.textContent=0;
+        playerScoreDisplay.innerHTML = 0;
+        computerScoreDisplay.innerHTML=0;
+        resultDisplay.innerHTML= "Select a item!";
+        console.log (playerScore)
+
     }
     resetButton.addEventListener("click", Reset)
 }

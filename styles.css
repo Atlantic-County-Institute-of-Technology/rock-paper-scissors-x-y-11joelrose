@@ -9,7 +9,7 @@ body{
 }
 h1{
     font-size: 3.5rem;
-    color: hsl(0, 0%, 20%);
+    color: black;
 }
 .choices{
     margin-bottom: 30px;
@@ -18,7 +18,7 @@ h1{
     font-size: 7.5em;
     min-width: 160px;
     margin: 0 10px;
-    border-radius: 250px;
+    border-radius: 5px;
     background-color: white;
     cursor: pointer;
     transition: background-color 0.5s ease;
@@ -42,4 +42,12 @@ h1{
 }
 .redText, #computerScoreDisplay{
     color: red;
+}
+#buttons101{
+    width: 100px;
+}
+#Reset{
+    width: 250px;
+    height: 250px;
+    font-size: 50px;
 }
