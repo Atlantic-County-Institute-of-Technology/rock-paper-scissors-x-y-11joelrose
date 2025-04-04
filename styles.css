@@ -43,6 +43,9 @@ h1{
 .redText, #computerScoreDisplay{
     color: red;
 }
+.darkText{
+    color: black;
+}
 #buttons101{
     width: 100px;
 }
